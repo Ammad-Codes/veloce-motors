@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VELOCE MOTORS | Drive the Extraordinary</title>
+  <meta name="description" content="Veloce Motors - luxury car showroom. Hand-selected supercars, financing, trade-in and test drives." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Page Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-wheel"></div>
+    <p>VELOCE</p>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">VELOCE<span>MOTORS</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#featured">Inventory</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Stories</a>
+        <a href="#booking">Book</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <video class="hero-video" autoplay muted loop playsinline poster="images/hero-poster.jpg">
+      <source src="https://videos.pexels.com/video-files/5309351/5309351-hd_1920_1080_25fps.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+
+    <!-- Shatter Animation Container -->
+    <div class="shatter-container" id="shatterContainer">
+      <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Luxury Sports Car" id="carImage" crossorigin="anonymous" />
+    </div>
+
+    <div class="hero-content" id="heroContent">
+      <h1 class="headline" id="headline">Drive the Extraordinary</h1>
+      <p class="subtext">Experience pure luxury and performance at Veloce Motors. Hand-selected supercars for those who demand the exceptional.</p>
+      <div class="hero-buttons">
+        <a href="#featured" class="btn btn-gold">View Inventory</a>
+        <a href="#booking" class="btn btn-outline">Book Test Drive</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Brands Marquee -->
+  <section class="brands-strip">
+    <div class="marquee">
+      <div class="marquee-track">
+        <img src="images/ferrari-logo.svg" alt="Ferrari" />
+        <img src="images/lamborghini-logo.png" alt="Lamborghini" />
+        <img src="images/porsche-logo.svg" alt="Porsche" />
+        <img src="images/mercedes-benz-logo.svg" alt="Mercedes" />
+        <img src="images/bmw-logo.svg" alt="BMW" />
+        <img src="images/audi-logo.svg" alt="Audi" />
+        <img src="images/mclaren-logo.svg" alt="McLaren" />
+        <img src="images/bugatti-logo.svg" alt="Bugatti" />
+        <img src="images/ferrari-logo.svg" alt="Ferrari" />
+        <img src="images/lamborghini-logo.png" alt="Lamborghini" />
+        <img src="images/porsche-logo.svg" alt="Porsche" />
+        <img src="images/mercedes-benz-logo.svg" alt="Mercedes" />
+        <img src="images/bmw-logo.svg" alt="BMW" />
+        <img src="images/audi-logo.svg" alt="Audi" />
+        <img src="images/mclaren-logo.svg" alt="McLaren" />
+        <img src="images/bugatti-logo.svg" alt="Bugatti" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Cars -->
+  <section class="section featured" id="featured">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Inventory</span>
+        <h2>Featured Collection</h2>
+      </div>
+      <div class="cars-grid">
+        <article class="car-card reveal reveal-up">
+          <div class="car-img"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Porsche 911 Carrera" loading="lazy" /></div>
+          <div class="car-info">
+            <div class="car-top"><h3>Porsche 911 Carrera</h3><span class="price">$124,900</span></div>
+            <ul class="car-specs"><li>2023</li><li>3,200 mi</li><li>Petrol</li></ul>
+            <a href="#booking" class="btn btn-gold btn-sm">View Details</a>
+          </div>
+        </article>
+        <article class="car-card reveal reveal-left">
+          <div class="car-img"><img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Mercedes-AMG GT" loading="lazy" /></div>
+          <div class="car-info">
+            <div class="car-top"><h3>Mercedes-AMG GT</h3><span class="price">$139,500</span></div>
+            <ul class="car-specs"><li>2022</li><li>5,800 mi</li><li>Petrol</li></ul>
+            <a href="#booking" class="btn btn-gold btn-sm">View Details</a>
+          </div>
+        </article>
+        <article class="car-card reveal reveal-right">
+          <div class="car-img"><img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="BMW M8 Competition" loading="lazy" /></div>
+          <div class="car-info">
+            <div class="car-top"><h3>BMW M8 Competition</h3><span class="price">$131,000</span></div>
+            <ul class="car-specs"><li>2023</li><li>2,100 mi</li><li>Petrol</li></ul>
+            <a href="#booking" class="btn btn-gold btn-sm">View Details</a>
+          </div>
+        </article>
+        <article class="car-card reveal reveal-up">
+          <div class="car-img"><img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Ford Mustang GT" loading="lazy" /></div>
+          <div class="car-info">
+            <div class="car-top"><h3>Ford Mustang GT</h3><span class="price">$58,900</span></div>
+            <ul class="car-specs"><li>2021</li><li>9,400 mi</li><li>Petrol</li></ul>
+            <a href="#booking" class="btn btn-gold btn-sm">View Details</a>
+          </div>
+        </article>
+        <article class="car-card reveal reveal-left">
+          <div class="car-img"><img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Ferrari F8 Tributo" loading="lazy" /></div>
+          <div class="car-info">
+            <div class="car-top"><h3>Ferrari F8 Tributo</h3><span class="price">$329,000</span></div>
+            <ul class="car-specs"><li>2022</li><li>1,500 mi</li><li>Petrol</li></ul>
+            <a href="#booking" class="btn btn-gold btn-sm">View Details</a>
+          </div>
+        </article>
+        <article class="car-card reveal reveal-right">
+          <div class="car-img"><img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Audi e-tron GT" loading="lazy" /></div>
+          <div class="car-info">
+            <div class="car-top"><h3>Audi e-tron GT</h3><span class="price">$106,500</span></div>
+            <ul class="car-specs"><li>2024</li><li>800 mi</li><li>Electric</li></ul>
+            <a href="#booking" class="btn btn-gold btn-sm">View Details</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">What We Offer</span>
+        <h2>Premium Services</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal reveal-up"><div class="service-icon">💳</div><h3>Financing</h3><p>Flexible, tailored finance plans with competitive rates.</p></div>
+        <div class="service-card reveal reveal-up"><div class="service-icon">🔄</div><h3>Trade-In</h3><p>Get the best value for your current vehicle, instantly.</p></div>
+        <div class="service-card reveal reveal-up"><div class="service-icon">🔧</div><h3>Maintenance</h3><p>Factory-trained technicians and genuine parts.</p></div>
+        <div class="service-card reveal reveal-up"><div class="service-icon">🛡️</div><h3>Insurance</h3><p>Comprehensive cover designed for luxury vehicles.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat reveal reveal-zoom"><span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span><p>Cars Sold</p></div>
+      <div class="stat reveal reveal-zoom"><span class="stat-number" data-target="15">0</span><p>Years of Excellence</p></div>
+      <div class="stat reveal reveal-zoom"><span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span><p>Happy Clients</p></div>
+      <div class="stat reveal reveal-zoom"><span class="stat-number" data-target="24">0</span><span class="stat-suffix">/7</span><p>Support</p></div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Showroom</span>
+        <h2>The Gallery</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal reveal-zoom" data-src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Showroom car" loading="lazy" /></div>
+        <div class="gallery-item reveal reveal-zoom" data-src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"><img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Showroom car" loading="lazy" /></div>
+        <div class="gallery-item reveal reveal-zoom" data-src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"><img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Showroom car" loading="lazy" /></div>
+        <div class="gallery-item reveal reveal-zoom" data-src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Showroom car" loading="lazy" /></div>
+        <div class="gallery-item reveal reveal-zoom" data-src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"><img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Showroom car" loading="lazy" /></div>
+        <div class="gallery-item reveal reveal-zoom" data-src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"><img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Showroom car" loading="lazy" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightboxImg" src="" alt="Gallery image" />
+  </div>
+
+  <!-- Testimonials -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Client Stories</span>
+        <h2>What Our Clients Say</h2>
+      </div>
+      <div class="testimonial-slider reveal">
+        <div class="testimonial active">
+          <div class="stars">★★★★★</div>
+          <p>"The most seamless car-buying experience I've ever had. My 911 was delivered spotless."</p>
+          <div class="client"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Carter" /><span>James Carter</span></div>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"Exceptional service from the first call to the final handshake. Truly a luxury experience."</p>
+          <div class="client"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sophia Lee" /><span>Sophia Lee</span></div>
+        </div>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>"Fair trade-in value, honest advice and a stunning showroom. Highly recommended."</p>
+          <div class="client"><img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Daniel Ross" /><span>Daniel Ross</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section class="section booking" id="booking">
+    <div class="container booking-wrap reveal">
+      <div class="section-head">
+        <span class="eyebrow">Experience It</span>
+        <h2>Book a Test Drive</h2>
+      </div>
+      <form class="booking-form" id="bookingForm">
+        <div class="form-group"><input type="text" id="name" placeholder=" " required /><label for="name">Full Name</label></div>
+        <div class="form-group"><input type="tel" id="phone" placeholder=" " required /><label for="phone">Phone</label></div>
+        <div class="form-group"><input type="email" id="email" placeholder=" " required /><label for="email">Email</label></div>
+        <div class="form-group">
+          <select id="model" required>
+            <option value="" disabled selected hidden></option>
+            <option>Porsche 911 Carrera</option>
+            <option>Mercedes-AMG GT</option>
+            <option>BMW M8 Competition</option>
+            <option>Ford Mustang GT</option>
+            <option>Ferrari F8 Tributo</option>
+            <option>Audi e-tron GT</option>
+          </select>
+          <label for="model">Car Model</label>
+        </div>
+        <div class="form-group form-group--fixed"><input type="date" id="date" required /><label for="date">Preferred Date</label></div>
+        <button type="submit" class="btn btn-gold btn-full">Book Test Drive</button>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <div class="checkmark">✓</div>
+        <h3>Booking Confirmed!</h3>
+        <p>Our team will contact you shortly to confirm your test drive.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#" class="logo">VELOCE<span>MOTORS</span></a>
+        <p>Hand-selected supercars for those who demand the exceptional.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">FB</a><a href="#" aria-label="X">X</a><a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+      <div><h4>Visit Us</h4><p>221 Prestige Avenue<br />Beverly Hills, CA 90210</p></div>
+      <div><h4>Hours</h4><p>Mon – Fri: 9am – 8pm<br />Sat: 10am – 6pm<br />Sun: Closed</p></div>
+      <div class="map-placeholder">Map</div>
+    </div>
+    <p class="copyright">© 2026 Veloce Motors. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
